@@ -33,6 +33,7 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    box-sizing: border-box;
 }
 
 nav,
@@ -41,6 +42,7 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+    box-sizing: border-box;
 }
 
 .socialmedia a {
@@ -71,4 +73,8 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+    background-color: var(--accent1-color);
+
 }
+
+.stats
