@@ -8,7 +8,25 @@
 }
 
 header {
-    background-color: var(--primary-color) color: var(var(--accent2-color))
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--primary-color);
+    color: var(var(--accent2-color));
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
 }
 
 * {
@@ -22,27 +40,37 @@ body {
     color: var(--accent1-color);
 }
 
-header,
-main,
+header img {
+    width: 120px;
+    height: 100px;
+}
+
+main {
+    width: 100%;
+}
+
 footer {
     width: 840;
     margin: 0 auto;
 }
 
-h1,
+h1 {
+
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    box-sizing: border-box;
+    align-self: center;
+}
+
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     box-sizing: border-box;
+    align-self: center;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-    box-sizing: border-box;
+nav {
+    display: flex;
 }
 
 .socialmedia a {
@@ -51,9 +79,142 @@ article {
 
 .hero {
     position: relative;
+    padding: 30px;
+    text-align: center;
 }
 
-.hero img {
+.her > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero article img {
+    width: 100px;
+}
+
+.hero article p {
+    flex: 1;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.hero-content p {
+    width: 80%;
+    text-align: left;
+}
+
+.hero-content img {
+    width: 100px;
+}
+
+.stats {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.stats img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.history {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.history-content p {
+    flex: 1;
+}
+
+.history-content img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.adventure {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.adventure img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.adventure-gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: beige;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+.adventure .hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -70,11 +231,11 @@ h1 {
     color: #fff;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-    background-color: var(--accent1-color);
-
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    align-items: cen
 }
-
-.stats
